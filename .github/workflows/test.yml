@@ -26,7 +26,8 @@ jobs:
     job3:
         needs: [job1]
         runs-on: macos-lastest
-        - name: Step1
+        steps:
+        - name: Step 1
           uses: actions/checkout@v2
         - name: Step2
           run: |
